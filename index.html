@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raimi Cybersecurity Portfolio</title>
+
+    <title>Raimi Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <!-- HERO SECTION -->
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="logo">RAIMI.</div>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO -->
 
     <section class="hero">
 
-        <div class="overlay"></div>
+        <div class="hero-left">
 
-        <div class="hero-content">
+            <h3>HELLO I'M</h3>
 
-            <img src="images/profile.jpg" class="profile-img">
+            <h1>
+                MUHAMMAD <span>RAIMI</span> HAKIMI
+            </h1>
 
-            <h1>MUHAMMAD RAIMI HAKIMI</h1>
-
-            <h3>Cybersecurity Enthusiast | Web Developer | IoT Developer</h3>
+            <h2>
+                Cybersecurity Enthusiast & Full Stack Developer
+            </h2>
 
             <p>
-                Bachelor of Computer Science (Internet Computing) Student
-                passionate about cybersecurity, cloud technologies,
-                software development and IoT systems.
+                Passionate about cybersecurity, cloud computing,
+                IoT development and modern web technologies.
             </p>
 
-            <a href="#about" class="btn">Explore Portfolio</a>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#reflection" class="btn-outline">Hire Me</a>
+            </div>
 
         </div>
 
+
+        <div class="hero-right">
+            <img src="images/profile.png">
+        </div>
+
     </section>
-
-
-    <!-- NAVIGATION -->
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#career">Career</a>
-        <a href="#skills">Skills</a>
-        <a href="#plan">Plan</a>
-        <a href="#projects">Projects</a>
-        <a href="#reflection">Reflection</a>
-    </nav>
 
 
     <!-- ABOUT -->
 
     <section id="about" class="section">
 
-        <h2>About Me</h2>
+        <div class="glass-card">
 
-        <div class="card">
+            <h2>About Me</h2>
 
             <p>
-                I am a Computer Science student from Universiti Sultan Zainal Abidin
-                with strong interest in cybersecurity, web application development,
-                cloud computing and Internet of Things (IoT).
+                I am a Bachelor of Computer Science student from UniSZA
+                with strong passion in cybersecurity, software development,
+                cloud technologies and IoT systems.
             </p>
 
             <p>
-                I enjoy developing systems that solve real-world problems while
-                continuously improving my technical and problem-solving skills.
+                I enjoy creating systems that solve real-world problems
+                while continuously improving my technical skills.
             </p>
 
         </div>
@@ -79,38 +93,37 @@
 
     <!-- CAREER -->
 
-    <section id="career" class="section dark-section">
+    <section id="career" class="section">
 
-        <h2>Career Exploration</h2>
+        <h2 class="title">Career Exploration</h2>
 
-        <div class="career-grid">
+        <div class="grid">
 
-            <div class="card">
+            <div class="glass-card">
                 <h3>Chosen Career</h3>
-
                 <p>
                     Cloud Security Engineer
                 </p>
             </div>
 
-            <div class="card">
+            <div class="glass-card">
                 <h3>Responsibilities</h3>
 
                 <ul>
-                    <li>Protect cloud infrastructure</li>
-                    <li>Monitor cyber threats</li>
-                    <li>Implement security policies</li>
-                    <li>Secure user authentication</li>
+                    <li>Protect cloud systems</li>
+                    <li>Prevent cyber attacks</li>
+                    <li>Monitor security threats</li>
+                    <li>Secure sensitive data</li>
                 </ul>
             </div>
 
-            <div class="card">
+            <div class="glass-card">
                 <h3>Required Skills</h3>
 
                 <ul>
+                    <li>AWS & Cloud Computing</li>
                     <li>Networking</li>
                     <li>Linux Administration</li>
-                    <li>Cloud Computing</li>
                     <li>Cybersecurity Fundamentals</li>
                 </ul>
             </div>
@@ -124,82 +137,48 @@
 
     <section id="skills" class="section">
 
-        <h2>Personal Skills Assessment</h2>
+        <h2 class="title">Skills Assessment</h2>
 
-        <div class="skills-grid">
+        <div class="grid">
 
-            <div class="card">
+            <div class="glass-card">
 
                 <h3>Technical Skills</h3>
 
-                <ul>
-                    <li>HTML & CSS</li>
-                    <li>Laravel Framework</li>
-                    <li>PHP & MySQL</li>
-                    <li>CodeIgniter</li>
-                    <li>NodeMCU ESP8266</li>
-                    <li>Networking Basics</li>
-                </ul>
+                <div class="skill">
+                    <span>HTML/CSS</span>
+                    <div class="bar"><div class="fill w90"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>Laravel</span>
+                    <div class="bar"><div class="fill w85"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>PHP & MySQL</span>
+                    <div class="bar"><div class="fill w80"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>Networking</span>
+                    <div class="bar"><div class="fill w70"></div></div>
+                </div>
 
             </div>
 
-            <div class="card">
+            <div class="glass-card">
 
                 <h3>Soft Skills</h3>
 
                 <ul>
                     <li>Communication</li>
                     <li>Problem Solving</li>
-                    <li>Teamwork</li>
                     <li>Leadership</li>
+                    <li>Teamwork</li>
                     <li>Critical Thinking</li>
                 </ul>
 
-            </div>
-
-            <div class="card">
-
-                <h3>Improvement Needed</h3>
-
-                <ul>
-                    <li>AWS Cloud Security</li>
-                    <li>Penetration Testing</li>
-                    <li>Advanced Linux</li>
-                    <li>Python Automation</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- DEVELOPMENT PLAN -->
-
-    <section id="plan" class="section dark-section">
-
-        <h2>Career Development Plan</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-box">
-                <h3>Short-Term Goals</h3>
-
-                <p>
-                    Complete degree, improve cybersecurity knowledge,
-                    and obtain certifications such as AWS Cloud Practitioner
-                    and CompTIA Security+.
-                </p>
-            </div>
-
-            <div class="timeline-box">
-                <h3>Long-Term Goals</h3>
-
-                <p>
-                    Become a professional Cloud Security Engineer
-                    and work in an international technology company.
-                </p>
             </div>
 
         </div>
@@ -211,56 +190,49 @@
 
     <section id="projects" class="section">
 
-        <h2>Evidence of Learning</h2>
+        <h2 class="title">Evidence of Learning</h2>
 
         <div class="project-grid">
 
             <div class="project-card">
-
                 <img src="images/smokehouse.png">
 
-                <div class="project-content">
-                    <h3>SmokeHouse Restaurant System</h3>
+                <div class="project-info">
+                    <h3>SmokeHouse System</h3>
 
                     <p>
-                        Developed a restaurant ordering system with
-                        admin dashboard, database integration,
-                        and product management features.
+                        Restaurant ordering system with admin dashboard,
+                        CRUD operation and database management.
                     </p>
                 </div>
-
             </div>
 
 
             <div class="project-card">
+                <img src="images/smartlamp.png">
 
-                <img src="images/iot.png">
-
-                <div class="project-content">
-                    <h3>Smart Lamp IoT Project</h3>
+                <div class="project-info">
+                    <h3>Smart Lamp IoT</h3>
 
                     <p>
-                        Built an automated smart lighting system using
-                        NodeMCU ESP8266, PIR sensor and LDR sensor.
+                        Automated smart lighting system using NodeMCU,
+                        PIR sensor and LDR sensor.
                     </p>
                 </div>
-
             </div>
 
 
             <div class="project-card">
-
                 <img src="images/fyp.png">
 
-                <div class="project-content">
-                    <h3>FYP – Tuition Management System</h3>
+                <div class="project-info">
+                    <h3>FYP Tuition System</h3>
 
                     <p>
-                        Currently developing a tuition management system
-                        for admin, tutors, students and parents using Laravel.
+                        Ongoing Laravel-based management system
+                        for admin, tutor, student and parent.
                     </p>
                 </div>
-
             </div>
 
         </div>
@@ -270,39 +242,25 @@
 
     <!-- REFLECTION -->
 
-    <section id="reflection" class="section dark-section">
+    <section id="reflection" class="section">
 
-        <h2>Personal Reflection</h2>
+        <div class="glass-card reflection">
 
-        <div class="card reflection-card">
+            <h2>Personal Reflection</h2>
 
             <h3>Dream Company</h3>
 
             <p>
-                My dream company is Microsoft because the company focuses
-                on innovation, cloud computing and cybersecurity technologies.
+                My dream company is Microsoft because
+                I admire their innovation in cloud computing,
+                AI and cybersecurity technologies.
             </p>
 
             <h3>Why Should We Hire You?</h3>
 
             <p>
-                I am hardworking, fast learner, and passionate about technology.
-                I always challenge myself through projects and self-learning.
-            </p>
-
-            <h3>Strengths</h3>
-
-            <ul>
-                <li>Problem Solving</li>
-                <li>Adaptability</li>
-                <li>Team Collaboration</li>
-            </ul>
-
-            <h3>Weaknesses</h3>
-
-            <p>
-                I sometimes focus too much on details,
-                but I am improving my time management skills.
+                I am hardworking, fast learner and passionate about technology.
+                I continuously improve myself through projects and self-learning.
             </p>
 
         </div>
@@ -314,7 +272,7 @@
 
     <footer>
         <p>
-            © 2026 Muhammad Raimi Hakimi | Cybersecurity Portfolio
+            © 2026 Muhammad Raimi Hakimi
         </p>
     </footer>
 
