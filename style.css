@@ -1,31 +1,25 @@
 :root {
-    --primary-bg: #0b0e14;
-    --card-bg: #161b22;
-    --accent: #3fb950; /* Warna hijau tech */
-    --cyan: #38bdf8;
-    --text-white: #f0f6fc;
-    --text-dim: #8b949e;
+    --bg: #05070a;
+    --card: #0d1117;
+    --accent: #00d2ff;
+    --accent-secondary: #3a7bd5;
+    --text: #e6edf3;
     --border: #30363d;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: var(--primary-bg);
-    color: var(--text-white);
-    line-height: 1.6;
     overflow-x: hidden;
 }
 
 /* NAVBAR */
-nav {
-    background: rgba(11, 14, 20, 0.8);
-    backdrop-filter: blur(10px);
+.glass-nav {
+    background: rgba(5, 7, 10, 0.8);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     position: fixed;
     width: 100%;
@@ -33,200 +27,104 @@ nav {
     z-index: 1000;
 }
 
-.nav-container {
-    max-width: 1100px;
+.nav-content {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
     align-items: center;
 }
 
-.logo {
-    font-family: 'Orbitron';
-    font-size: 1.5rem;
-    color: var(--cyan);
+.logo { font-family: 'Orbitron'; font-weight: 900; color: var(--accent); letter-spacing: 2px; }
+.logo span { color: white; }
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a { text-decoration: none; color: var(--text); font-size: 0.9rem; font-weight: 600; transition: 0.3s; opacity: 0.7; }
+.nav-links a:hover { opacity: 1; color: var(--accent); }
+
+/* HERO SECTION */
+.hero-premium {
+    padding: 180px 20px 100px;
+    position: relative;
+    overflow: hidden;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+.hero-overlay {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,210,255,0.05) 0%, transparent 70%);
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: var(--text-dim);
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--cyan);
-}
-
-/* HERO SECTION / PROFILE IMAGE FIX */
-.hero-banner {
-    background: linear-gradient(180deg, #10141b 0%, #0b0e14 100%);
-    padding: 120px 20px 60px;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-}
-
-.profile-wrapper {
-    max-width: 800px;
+.hero-container {
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-.profile-ring {
-    width: 160px;
-    height: 160px;
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    padding: 5px;
-    background: linear-gradient(45deg, var(--cyan), var(--accent));
-    box-shadow: 0 0 30px rgba(56, 189, 248, 0.3);
-}
-
-.main-profile-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    background: #0d1117;
-    border: 3px solid #0b0e14;
-    display: block; /* Memastikan imej dipaparkan */
-}
-
-.hero-banner h1 {
-    font-family: 'Orbitron';
-    font-size: 2rem;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.tagline {
-    color: var(--cyan);
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.social-pills {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.social-pills span {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    padding: 6px 15px;
-    border-radius: 50px;
-    font-size: 0.8rem;
-    color: var(--text-dim);
-}
-
-/* DASHBOARD CARDS */
-.dashboard-content {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.glass-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 30px;
-    margin-bottom: 25px;
-    transition: 0.3s ease;
-}
-
-.glass-card:hover {
-    border-color: var(--cyan);
-    transform: translateY(-5px);
-}
-
-.card-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 50px;
 }
 
-.icon-box {
-    width: 45px;
-    height: 45px;
-    background: rgba(56, 189, 248, 0.1);
-    color: var(--cyan);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-}
+.hero-text h1 { font-family: 'Orbitron'; font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+.gradient-text { background: linear-gradient(90deg, var(--accent), var(--accent-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.card-header h2 {
-    font-size: 1.25rem;
-    font-weight: 700;
-}
+.badge { background: rgba(0,210,255,0.1); color: var(--accent); padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; margin-bottom: 20px; display: inline-block; }
 
-/* SKILLS STYLES */
-.skills-flex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.skill-pill {
-    background: #0d1117;
-    border: 1px solid var(--border);
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9rem;
-}
-
-.skill-pill.light {
-    border-left: 4px solid var(--accent);
-}
-
-/* TABLE STYLES */
-.table-wrapper {
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
+.photo-frame {
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
     padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
+    background: linear-gradient(45deg, var(--accent), transparent);
+    box-shadow: 0 0 50px rgba(0,210,255,0.2);
 }
 
-th {
-    color: var(--cyan);
-    font-size: 0.9rem;
-}
+.photo-frame img { width: 100%; height: 100%; border-radius: 20px; object-fit: cover; }
 
-/* FOOTER */
-footer {
-    text-align: center;
+/* PREMIUM CARDS */
+.career-card-premium {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 24px;
     padding: 40px;
-    color: var(--text-dim);
-    font-size: 0.8rem;
-    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    transition: 0.4s;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .skills-flex { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
+.career-card-premium:hover { border-color: var(--accent); transform: scale(1.02); }
+
+.card-icon { font-size: 3rem; color: var(--accent); }
+
+.skill-tags span { background: #1c2128; padding: 8px 15px; border-radius: 10px; margin-right: 10px; font-size: 0.8rem; border: 1px solid var(--border); }
+
+/* PROGRESS DASHBOARD */
+.skills-dashboard { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 30px; }
+.progress-bar { height: 12px; background: #1c2128; border-radius: 10px; margin-top: 10px; overflow: hidden; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-secondary)); border-radius: 10px; }
+
+/* MEGA PROJECT SECTION */
+.mega-project { background: var(--card); border-radius: 24px; overflow: hidden; border: 1px solid var(--border); }
+.project-display img { width: 100%; height: auto; border-bottom: 1px solid var(--border); }
+.project-details { padding: 40px; }
+
+/* MODERN TIMELINE */
+.modern-timeline { position: relative; padding: 50px 0; }
+.t-line { position: absolute; left: 50%; width: 2px; height: 100%; background: var(--border); transform: translateX(-50%); }
+.t-node { width: 45%; margin-bottom: 40px; position: relative; }
+.t-node.right { margin-left: 55%; }
+.t-icon { position: absolute; left: calc(100% + 15px); top: 0; background: var(--accent); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 2; }
+.t-node.right .t-icon { left: auto; right: calc(100% + 15px); }
+.t-content { background: var(--card); padding: 20px; border-radius: 15px; border: 1px solid var(--border); }
+
+/* SECTION TITLES */
+.section-title { font-family: 'Orbitron'; font-size: 1.8rem; margin: 80px 0 40px; text-align: center; }
+
+@media (max-width: 900px) {
+    .hero-container, .skills-dashboard { grid-template-columns: 1fr; text-align: center; }
+    .hero-container { flex-direction: column-reverse; }
+    .t-node { width: 90%; margin-left: 10% !important; }
+    .t-line { left: 0; }
 }
