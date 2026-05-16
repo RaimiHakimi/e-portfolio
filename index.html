@@ -3,110 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raimi Hakimi | Career Portfolio</title>
+    <title>Raimi E-Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <header>
+        <h1>MUHAMMAD RAIMI HAKIMI</h1>
+        <p>Computer Science Student | Future Cybersecurity Specialist</p>
+    </header>
+
     <nav>
-        <div class="logo">RAIMI<span>.</span></div>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#career">Career</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#reflection">Reflection</a></li>
-        </ul>
+        <a href="#career">Career</a>
+        <a href="#skills">Skills</a>
+        <a href="#plan">Development Plan</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#reflection">Reflection</a>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-circle">
-                <img src="images/profile.png" alt="Raimi Hakimi">
-            </div>
-            <h3>WELCOME TO MY E-PORTFOLIO</h3>
-            <h1>MUHAMMAD <span>RAIMI</span> HAKIMI</h1>
-            <p class="hero-desc">Final Year IT Student @ <strong>UniSZA</strong>. Specialized in Laravel, IoT & Network Security.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn">View Project</a>
-                <a href="#plan" class="btn-outline">Career Plan</a>
-            </div>
-        </div>
+    <section id="career">
+        <h2>Career Exploration</h2>
+        <p>
+            I am interested in becoming a Cloud Security Engineer because
+            cloud technology and cybersecurity are becoming increasingly important.
+        </p>
     </section>
 
-    <section id="career" class="section">
-        <h2 class="title">01. Career Exploration</h2>
-        <div class="clean-card">
-            <h3>Software Developer (Security-focused)</h3>
-            <p>My duty extends past just coding. It requires a <strong>"security first"</strong> perspective to ensure data integrity and system resilience in Laravel and IoT ecosystems.</p>
-            <div class="skill-tags">
-                <span>PHP (Laravel)</span><span>IoT Integration</span><span>OWASP Top 10</span>
-            </div>
-        </div>
+    <section id="skills">
+        <h2>Personal Skills Assessment</h2>
+
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>PHP & Laravel</li>
+            <li>MySQL Database</li>
+            <li>Networking Basics</li>
+        </ul>
+
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Teamwork</li>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+        </ul>
     </section>
 
-    <section id="skills" class="section">
-        <div class="grid-two">
-            <div class="skill-col">
-                <h2 class="title">02. Skills</h2>
-                <div class="clean-card">
-                    <ul class="skill-list">
-                        <li><span class="badge pro">PRO</span> Laravel & IoT</li>
-                        <li><span class="badge new">NEW</span> Network Security</li>
-                        <li><span class="badge soft">SOFT</span> Problem Solving</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="plan" class="plan-col">
-                <h2 class="title">03. Career Plan</h2>
-                <div class="clean-card">
-                    <p><strong>Goal:</strong> Junior Full-Stack Developer</p>
-                    <p><strong>Cert:</strong> CompTIA Security+</p>
-                </div>
-            </div>
-        </div>
+    <section id="plan">
+        <h2>Career Development Plan</h2>
+
+        <table border="1">
+            <tr>
+                <th>Timeline</th>
+                <th>Goal</th>
+            </tr>
+
+            <tr>
+                <td>2 Years</td>
+                <td>Complete degree and learn AWS Cloud</td>
+            </tr>
+
+            <tr>
+                <td>5 Years</td>
+                <td>Become Cloud Security Engineer</td>
+            </tr>
+        </table>
     </section>
 
-    <section id="projects" class="section">
-        <h2 class="title">04. Redlight for Turtlezone</h2>
-        <div class="project-grid">
-            <div class="project-box">
-                <div class="project-img-wrapper">
-                    <img src="images/smartutor.png" alt="Web Dashboard">
-                </div>
-                <div class="project-text">
-                    <h4>Web Development (Laravel)</h4>
-                    <p>Dashboard untuk pemantauan pantai secara real-time.</p>
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="project-img-wrapper grid-inner">
-                    <img src="images/sensorlamp.png" alt="IoT 1">
-                    <img src="images/smokehouse.png" alt="IoT 2">
-                </div>
-                <div class="project-text">
-                    <h4>Hardware & IoT</h4>
-                    <p>Integrasi ESP32 & PIR sensor untuk pengesanan pergerakan.</p>
-                </div>
-            </div>
-        </div>
+    <section id="evidence">
+        <h2>Evidence of Learning</h2>
+
+        <ul>
+            <li>SmokeHouse Web Project</li>
+            <li>Smart Lamp IoT Project</li>
+            <li>University Timetable Scheduling Project</li>
+        </ul>
     </section>
 
-    <section id="reflection" class="section">
-        <h2 class="title">05. Reflection</h2>
-        <div class="clean-card reflection">
-            <p class="quote">"I aim to apply my technical capability in high-security environments like <strong>PETRONAS</strong>."</p>
-            <div class="sw-grid">
-                <div><h5>Strengths</h5><p>Programming & Logic</p></div>
-                <div><h5>Weaknesses</h5><p>Advanced Cyber Protocols</p></div>
-            </div>
-        </div>
-    </section>
+    <section id="reflection">
+        <h2>Personal Reflection</h2>
 
-    <footer>
-        <p>© 2026 Muhammad Raimi Hakimi | Minimalist Portfolio</p>
-    </footer>
+        <p>
+            My dream company is 
+            :contentReference[oaicite:4]{index=4} 
+            because the company focuses on innovation and cloud technology.
+        </p>
+    </section>
 
 </body>
 </html>
