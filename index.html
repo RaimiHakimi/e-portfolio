@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raimi Hakimi | Career Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -16,112 +15,97 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#career">Career</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#plan">Plan</a></li>
             <li><a href="#projects">Project</a></li>
+            <li><a href="#reflection">Reflection</a></li>
         </ul>
     </nav>
 
     <section id="home" class="hero">
-        <div class="hero-left">
+        <div class="hero-content">
+            <div class="profile-circle">
+                <img src="images/profile.png" alt="Raimi Hakimi">
+            </div>
             <h3>WELCOME TO MY E-PORTFOLIO</h3>
             <h1>MUHAMMAD <span>RAIMI</span> HAKIMI</h1>
-            <p>An IT Developer from <strong>Universiti Sultan Zainal Abidin</strong>. Specialized in Laravel, IoT, and Network Security.</p>
+            <p class="hero-desc">Final Year IT Student @ <strong>UniSZA</strong>. Specialized in Laravel, IoT & Network Security.</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn">View Project</a>
                 <a href="#plan" class="btn-outline">Career Plan</a>
             </div>
         </div>
-        <div class="hero-right">
-            <div class="img-frame">
-                <img src="images/profile.png" alt="Profile Raimi">
-            </div>
-        </div>
     </section>
 
     <section id="career" class="section">
-        <h2 class="title">Career Exploration</h2>
-        <div class="glass-card">
+        <h2 class="title">01. Career Exploration</h2>
+        <div class="clean-card">
             <h3>Software Developer (Security-focused)</h3>
-            <p>My duty extends past just coding for a Laravel website, mobile app, and IoT Devices. It requires thinking from a <strong>"security first"</strong> perspective to ensure data integrity and system resilience.</p>
-            <p style="margin-top: 15px; color: #00f0ff;">Required Skills: PHP (Laravel), Mobile Development, IoT Integration, and OWASP Top 10.</p>
+            <p>My duty extends past just coding. It requires a <strong>"security first"</strong> perspective to ensure data integrity and system resilience in Laravel and IoT ecosystems.</p>
+            <div class="skill-tags">
+                <span>PHP (Laravel)</span><span>IoT Integration</span><span>OWASP Top 10</span>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="section">
-        <h2 class="title">Personal Skills Assessment</h2>
-        <div class="skills-grid">
-            <div class="skill-category glass-card">
-                <h4>Technical Skills</h4>
-                <ul>
-                    <li><span class="badge pro">PRO</span> Laravel, Mobile Apps & IoT</li>
-                    <li><span class="badge new">NEW</span> Computer Network Security</li>
-                </ul>
+        <div class="grid-two">
+            <div class="skill-col">
+                <h2 class="title">02. Skills</h2>
+                <div class="clean-card">
+                    <ul class="skill-list">
+                        <li><span class="badge pro">PRO</span> Laravel & IoT</li>
+                        <li><span class="badge new">NEW</span> Network Security</li>
+                        <li><span class="badge soft">SOFT</span> Problem Solving</li>
+                    </ul>
+                </div>
             </div>
-            <div class="skill-category glass-card">
-                <h4>Soft Skills</h4>
-                <ul>
-                    <li>Creative Problem Solving</li>
-                    <li>Rapid Learning & Adaptability</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="plan" class="section">
-        <h2 class="title">Career Development Plan</h2>
-        <div class="plan-grid">
-            <div class="glass-card">
-                <h4>Target Certifications</h4>
-                <p>CompTIA Security+ & Certified Application Security Engineer (CASE)</p>
-            </div>
-            <div class="glass-card">
-                <h4>Career Timeline</h4>
-                <p><strong>Short-Term:</strong> Junior Full-Stack Developer</p>
-                <p><strong>Long-Term:</strong> Secure Software Developer / Tech Lead</p>
+            <div id="plan" class="plan-col">
+                <h2 class="title">03. Career Plan</h2>
+                <div class="clean-card">
+                    <p><strong>Goal:</strong> Junior Full-Stack Developer</p>
+                    <p><strong>Cert:</strong> CompTIA Security+</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="title">REDLIGHT FOR TURTLEZONE</h2>
-        
-        <div class="project-item">
-            <div class="project-info">
-                <h3>Item 1: Web Development (Laravel)</h3>
-                <p>A web application developed in Laravel, integrated with IoT products like ESP32 to monitor the coast for conservation.</p>
+        <h2 class="title">04. Redlight for Turtlezone</h2>
+        <div class="project-grid">
+            <div class="project-box">
+                <div class="project-img-wrapper">
+                    <img src="images/smartutor.png" alt="Web Dashboard">
+                </div>
+                <div class="project-text">
+                    <h4>Web Development (Laravel)</h4>
+                    <p>Dashboard untuk pemantauan pantai secara real-time.</p>
+                </div>
             </div>
-            <img src="images/smartutor.png" class="project-img"> </div>
-
-        <div class="project-item reverse">
-            <div class="project-info">
-                <h3>Item 2: Hardware & IoT Integration</h3>
-                <p>Physical nodes operated with ESP32 and PIR motion sensors to detect movement and capture visual data for real-time monitoring.</p>
+            <div class="project-box">
+                <div class="project-img-wrapper grid-inner">
+                    <img src="images/sensorlamp.png" alt="IoT 1">
+                    <img src="images/smokehouse.png" alt="IoT 2">
+                </div>
+                <div class="project-text">
+                    <h4>Hardware & IoT</h4>
+                    <p>Integrasi ESP32 & PIR sensor untuk pengesanan pergerakan.</p>
+                </div>
             </div>
-            <div class="iot-gallery">
-                <img src="images/sensorlamp.png"> <img src="images/smokehouse.png"> </div>
         </div>
     </section>
 
     <section id="reflection" class="section">
-        <h2 class="title">Personal Reflection</h2>
-        <div class="glass-card reflection-box">
-            <p><strong>Ideal Company:</strong> PETRONAS / Cybersecurity Firm.</p>
-            <p>I aim to apply my web and hardware development capability in a high-security environment to protect critical infrastructure.</p>
+        <h2 class="title">05. Reflection</h2>
+        <div class="clean-card reflection">
+            <p class="quote">"I aim to apply my technical capability in high-security environments like <strong>PETRONAS</strong>."</p>
             <div class="sw-grid">
-                <div>
-                    <h5>Strengths</h5>
-                    <p>Programming logic and ability to create functional systems on Laravel and IoT.</p>
-                </div>
-                <div>
-                    <h5>Weaknesses</h5>
-                    <p>Lack of deeper, practical knowledge on advanced cyber security protocols.</p>
-                </div>
+                <div><h5>Strengths</h5><p>Programming & Logic</p></div>
+                <div><h5>Weaknesses</h5><p>Advanced Cyber Protocols</p></div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 Muhammad Raimi Hakimi | Portfolio Pembangunan Kerjaya</p>
+        <p>© 2026 Muhammad Raimi Hakimi | Minimalist Portfolio</p>
     </footer>
 
 </body>
