@@ -1,94 +1,40 @@
-:root {
-    --bg: #f9fafb;        /* Background Kelabu Sangat Cair (Bukan Hitam) */
-    --card-bg: #ffffff;   /* Kad Putih Bersih */
-    --text: #1f2937;      /* Tulisan Gelap */
-    --accent: #0ea5e9;    /* Warna Biru Cyber */
-    --border: #e5e7eb;
+body{
+    font-family: Arial;
+    margin:0;
+    background:#f4f4f4;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
+header{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
 }
 
-/* NAVBAR */
-nav {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 20px 10%; background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 100;
-    border-bottom: 1px solid var(--border);
+nav{
+    background:#1e293b;
+    padding:15px;
+    text-align:center;
 }
 
-.logo { font-family: 'Orbitron'; font-weight: 700; color: var(--text); font-size: 20px; }
-.logo span { color: var(--accent); }
-
-nav ul { display: flex; list-style: none; }
-nav ul li { margin-left: 20px; }
-nav ul li a { text-decoration: none; color: var(--text); font-size: 14px; font-weight: 600; }
-
-/* HERO SECTION */
-.hero {
-    padding: 150px 10% 80px; text-align: center;
-    background: radial-gradient(circle at top, #e0f2fe 0%, var(--bg) 70%);
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
 }
 
-.profile-circle {
-    width: 140px; height: 140px; margin: 0 auto 20px;
-    border-radius: 50%; border: 4px solid #fff; overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-.profile-circle img { width: 100%; height: 100%; object-fit: cover; }
-
-.hero h1 { font-family: 'Orbitron'; font-size: 36px; margin: 10px 0; }
-.hero span { color: var(--accent); }
-.hero-desc { max-width: 600px; margin: 0 auto 30px; color: #6b7280; }
-
-.btn, .btn-outline { 
-    padding: 12px 25px; border-radius: 8px; text-decoration: none; 
-    display: inline-block; font-weight: 600; transition: 0.3s;
-}
-.btn { background: var(--accent); color: white; margin-right: 10px; }
-.btn-outline { border: 1.5px solid var(--accent); color: var(--accent); }
-
-/* SECTION & CARDS */
-.section { padding: 80px 15%; }
-.title { font-family: 'Orbitron'; font-size: 18px; margin-bottom: 25px; color: #9ca3af; text-transform: uppercase; letter-spacing: 2px; }
-
-.clean-card {
-    background: var(--card-bg); padding: 30px; border-radius: 16px;
-    border: 1px solid var(--border); box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+section{
+    background:white;
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
 }
 
-.grid-two { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+table{
+    width:100%;
+    border-collapse:collapse;
+}
 
-/* PROJECT GRID (TERATUR) */
-.project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-
-.project-box { background: #fff; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
-
-.project-img-wrapper { height: 200px; background: #f3f4f6; }
-.project-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }
-
-.grid-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-
-.project-text { padding: 20px; }
-.project-text h4 { margin-bottom: 5px; color: var(--accent); }
-
-/* REFLECTION */
-.sw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; border-top: 1px solid var(--border); padding-top: 20px; }
-
-.badge { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; margin-right: 8px; }
-.pro { background: #e0f2fe; color: var(--accent); }
-.new { background: #fef3c7; color: #d97706; }
-.soft { background: #f3f4f6; color: #374151; }
-
-footer { text-align: center; padding: 40px; color: #9ca3af; font-size: 13px; }
-
-@media (max-width: 768px) {
-    .grid-two, .project-grid, .sw-grid { grid-template-columns: 1fr; }
-    .section { padding: 60px 5%; }
+th, td{
+    padding:10px;
 }
