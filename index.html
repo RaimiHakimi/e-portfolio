@@ -1,279 +1,128 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Professional Portfolio | Raimi Hakimi</title>
-
-    
-
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <title>Raimi Hakimi | Career Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-
-
     <nav>
-
-        <div class="nav-container">
-
-            <div class="logo">RH<span>.</span></div>
-
-            <ul class="nav-links">
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#career">Career</a></li>
-
-                <li><a href="#skills">Skills</a></li>
-
-                <li><a href="#projects">Evidence</a></li>
-
-                <li><a href="#plan">Plan</a></li>
-
-            </ul>
-
-        </div>
-
+        <div class="logo">RAIMI<span>.</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#plan">Plan</a></li>
+            <li><a href="#projects">Project</a></li>
+        </ul>
     </nav>
 
-
-
-    <section class="hero-banner">
-
-        <div class="profile-wrapper">
-
-            <div class="profile-ring">
-
-                <img src="images/profile.png" alt="Muhammad Raimi Hakimi" class="main-profile-img">
-
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <h3>WELCOME TO MY E-PORTFOLIO</h3>
+            <h1>MUHAMMAD <span>RAIMI</span> HAKIMI</h1>
+            <p>An IT Developer from <strong>Universiti Sultan Zainal Abidin</strong>. Specialized in Laravel, IoT, and Network Security.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">View Project</a>
+                <a href="#plan" class="btn-outline">Career Plan</a>
             </div>
-
-            <h1>MUHAMMAD RAIMI HAKIMI</h1>
-
-            <p class="tagline">Cloud Security Specialist in Training | Full Stack Web Developer</p>
-
-            <div class="social-pills">
-
-                <span><i class="fa-solid fa-university"></i> UniSZA Student</span>
-
-                <span><i class="fa-solid fa-code"></i> Laravel Dev</span>
-
-                <span><i class="fa-solid fa-shield-halved"></i> CyberSec</span>
-
-            </div>
-
         </div>
-
+        <div class="hero-right">
+            <div class="img-frame">
+                <img src="images/profile.png" alt="Profile Raimi">
+            </div>
+        </div>
     </section>
 
+    <section id="career" class="section">
+        <h2 class="title">Career Exploration</h2>
+        <div class="glass-card">
+            <h3>Software Developer (Security-focused)</h3>
+            <p>My duty extends past just coding for a Laravel website, mobile app, and IoT Devices. It requires thinking from a <strong>"security first"</strong> perspective to ensure data integrity and system resilience.</p>
+            <p style="margin-top: 15px; color: #00f0ff;">Required Skills: PHP (Laravel), Mobile Development, IoT Integration, and OWASP Top 10.</p>
+        </div>
+    </section>
 
-
-    <main class="dashboard-content">
-
-
-
-        <section id="about" class="glass-card animate-up">
-
-            <div class="card-header">
-
-                <div class="icon-box"><i class="fa-solid fa-id-card"></i></div>
-
-                <h2>Professional Summary</h2>
-
+    <section id="skills" class="section">
+        <h2 class="title">Personal Skills Assessment</h2>
+        <div class="skills-grid">
+            <div class="skill-category glass-card">
+                <h4>Technical Skills</h4>
+                <ul>
+                    <li><span class="badge pro">PRO</span> Laravel, Mobile Apps & IoT</li>
+                    <li><span class="badge new">NEW</span> Computer Network Security</li>
+                </ul>
             </div>
-
-            <div class="card-body">
-
-                <p>
-
-                    Final-year <strong>Computer Science</strong> student at UniSZA with a specialized focus on <strong>Software Development</strong> and <strong>Cloud Infrastructure Security</strong>. I possess a unique blend of creative and technical skills, serving as a <strong>Video Editor</strong> for collaborative projects while maintaining a high proficiency in <strong>Laravel (PHP)</strong> and <strong>MySQL</strong>.
-
-                </p>
-
+            <div class="skill-category glass-card">
+                <h4>Soft Skills</h4>
+                <ul>
+                    <li>Creative Problem Solving</li>
+                    <li>Rapid Learning & Adaptability</li>
+                </ul>
             </div>
+        </div>
+    </section>
 
-        </section>
-
-
-
-        <section id="career" class="glass-card animate-up">
-
-            <div class="card-header">
-
-                <div class="icon-box"><i class="fa-solid fa-rocket"></i></div>
-
-                <h2>Career Aspiration: Cloud Security Engineer</h2>
-
+    <section id="plan" class="section">
+        <h2 class="title">Career Development Plan</h2>
+        <div class="plan-grid">
+            <div class="glass-card">
+                <h4>Target Certifications</h4>
+                <p>CompTIA Security+ & Certified Application Security Engineer (CASE)</p>
             </div>
+            <div class="glass-card">
+                <h4>Career Timeline</h4>
+                <p><strong>Short-Term:</strong> Junior Full-Stack Developer</p>
+                <p><strong>Long-Term:</strong> Secure Software Developer / Tech Lead</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="career-content">
+    <section id="projects" class="section">
+        <h2 class="title">REDLIGHT FOR TURTLEZONE</h2>
+        
+        <div class="project-item">
+            <div class="project-info">
+                <h3>Item 1: Web Development (Laravel)</h3>
+                <p>A web application developed in Laravel, integrated with IoT products like ESP32 to monitor the coast for conservation.</p>
+            </div>
+            <img src="images/smartutor.png" class="project-img"> </div>
 
-                <div class="career-desc">
+        <div class="project-item reverse">
+            <div class="project-info">
+                <h3>Item 2: Hardware & IoT Integration</h3>
+                <p>Physical nodes operated with ESP32 and PIR motion sensors to detect movement and capture visual data for real-time monitoring.</p>
+            </div>
+            <div class="iot-gallery">
+                <img src="images/sensorlamp.png"> <img src="images/smokehouse.png"> </div>
+        </div>
+    </section>
 
-                    <p>My core ambition is to secure the next generation of cloud computing architectures. I aim to bridge the gap between rapid software deployment and robust security protocols.</p>
-
+    <section id="reflection" class="section">
+        <h2 class="title">Personal Reflection</h2>
+        <div class="glass-card reflection-box">
+            <p><strong>Ideal Company:</strong> PETRONAS / Cybersecurity Firm.</p>
+            <p>I aim to apply my web and hardware development capability in a high-security environment to protect critical infrastructure.</p>
+            <div class="sw-grid">
+                <div>
+                    <h5>Strengths</h5>
+                    <p>Programming logic and ability to create functional systems on Laravel and IoT.</p>
                 </div>
-
-                <div class="career-grid">
-
-                    <div class="info-item">
-
-                        <i class="fa-solid fa-bolt"></i>
-
-                        <div>
-
-                            <h4>Responsibilities</h4>
-
-                            <p>Designing IAM policies, conducting threat modeling, and implementing Zero Trust architectures.</p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="info-item">
-
-                        <i class="fa-solid fa-brain"></i>
-
-                        <div>
-
-                            <h4>Required Skills</h4>
-
-                            <p>Deep knowledge of AWS Security, Linux Kernel hardening, and Network Forensics.</p>
-
-                        </div>
-
-                    </div>
-
+                <div>
+                    <h5>Weaknesses</h5>
+                    <p>Lack of deeper, practical knowledge on advanced cyber security protocols.</p>
                 </div>
-
             </div>
-
-        </section>
-
-
-
-        <section id="skills" class="glass-card animate-up">
-
-            <div class="card-header">
-
-                <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
-
-                <h2>Skills & Competencies</h2>
-
-            </div>
-
-            <div class="skills-flex">
-
-                <div class="skill-group">
-
-                    <h3>Technical Stack</h3>
-
-                    <div class="skill-pill">Laravel (PHP) <span>85%</span></div>
-
-                    <div class="skill-pill">MySQL Database <span>80%</span></div>
-
-                    <div class="skill-pill">Video Editing <span>90%</span></div>
-
-                    <div class="skill-pill">CyberSecurity <span>75%</span></div>
-
-                </div>
-
-                <div class="skill-group">
-
-                    <h3>Soft Skills</h3>
-
-                    <div class="skill-pill light">Effective Communication</div>
-
-                    <div class="skill-pill light">Team Leadership</div>
-
-                    <div class="skill-pill light">Analytical Thinking</div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <section id="plan" class="glass-card animate-up">
-
-            <div class="card-header">
-
-                <div class="icon-box"><i class="fa-solid fa-calendar-check"></i></div>
-
-                <h2>Strategic Development Plan</h2>
-
-            </div>
-
-            <div class="table-wrapper">
-
-                <table>
-
-                    <thead>
-
-                        <tr>
-
-                            <th>Phase</th>
-
-                            <th>Milestones</th>
-
-                        </tr>
-
-                    </thead>
-
-                    <tbody>
-
-                        <tr>
-
-                            <td>Short Term (1-2 Yrs)</td>
-
-                            <td>Graduate from UniSZA and secure <strong>AWS Certified Security - Specialty</strong>.</td>
-
-                        </tr>
-
-                        <tr>
-
-                            <td>Mid Term (3-5 Yrs)</td>
-
-                            <td>Develop an automated <strong>Security-as-Code</strong> framework for Enterprise Cloud.</td>
-
-                        </tr>
-
-                    </tbody>
-
-                </table>
-
-            </div>
-
-        </section>
-
-
-
-    </main>
-
-
+        </div>
+    </section>
 
     <footer>
-
-        <p>&copy; 2026 Muhammad Raimi Hakimi | Created for Professional Development</p>
-
+        <p>© 2026 Muhammad Raimi Hakimi | Portfolio Pembangunan Kerjaya</p>
     </footer>
 
-
-
 </body>
-
 </html>
